@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 const base64 = require('base64-js');
 
+router.get('/', (req, res) => {
+  res.render('base64'); 
+});
+
 router.post('/', (req, res) => {
   const { text } = req.body;
 
