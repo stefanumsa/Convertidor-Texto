@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  
+  h2 Convertidor  del Codigo César
+  .cesar-container
+    
+    form(action="/cesar", method="POST")
+  .form-group
+    label(for="text") Texto:
+    input(type="text", id="text", name="text" required)
+    label(for="shift") Desplazamiento:
+    input(type="number", id="shift", name="shift" required)
+    button(type="submit") Cifrar
+

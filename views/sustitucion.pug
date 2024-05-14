@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h2 Conversión de texto por sustitución
+  .sustitucion-container
+    form(action="/sustitucion", method="POST")
+      .form-group
+        label(for="text") Texto:
+        input(type="text", id="text", name="text", placeholder="Ingrese su texto aquí", required)
+      button(type="submit") Convertir por sustitución

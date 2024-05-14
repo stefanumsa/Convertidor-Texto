@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h2 Conversión de texto a Hexadecimal
+  .hexadecimal-container
+    form(action="/hexadecimal", method="POST")
+      .form-group
+        label(for="text") Texto:
+        input(type="text", id="text", name="text", placeholder="Ingrese su texto aquí", required)
+      button(type="submit") Convertir a Hexadecimal
